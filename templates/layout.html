@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App</title>
+    <title>Project Managemnt</title>
 
     <link href="/static/DataTables/DataTables-1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet"/>
     <link href="/static/Buttons-2.3.6/css/buttons.bootstrap5.min.css" rel="stylesheet"/>
@@ -28,7 +28,6 @@
 
 </body>
 
-
 {% block script %}
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -48,26 +47,21 @@
 <script src="/static/DataTables/Buttons-2.3.6/js/buttons.html5.min.js"></script>
 <script src="/static/DataTables/Buttons-2.3.6/js/buttons.print.min.js"></script>
 
-
 <script>
 
-    // Si definimos asi va para todas las tablas del proyecto
     $.extend(true, $.fn.dataTable.defaults, {
         searching: false,
         ordering: true, 
     });
 
     $(document).ready(function () {
- 
-       //Inicia con valores por defecto  $('#mitabla').DataTable();
 
-       // Definimos para 1 tabla en particular
         $('#mitabla').DataTable({
              searching: 'true',
              responsive: 'true',
              dom:'B<"clear">lfrtip',
              buttons: [ 'copy', 'csv','pdf','print'],
-             "language": {"url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Spanish.json"}
+             "language": {"url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Indonesian.json"}
 
         });
 
@@ -76,7 +70,6 @@
     });
 
 </script>
-
 
 {% endblock %}
 </html>
